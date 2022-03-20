@@ -10,6 +10,6 @@ fn main() {
     io::stdin()
         .read_line(&mut a)
         .expect("failed to read line");
-    
     println!("You guessed: {}", a);
+    println!("Secret number: {secret} or {secret:b} in binary or {secret:x} in hex");
 }
