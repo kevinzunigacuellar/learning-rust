@@ -1,15 +1,10 @@
-use std::io;
-use rand::Rng;
-
 fn main() {
-    println!("Guessing game! 🤪");
-    println!("Input your guess:");
-    let mut a = String::new();
-    let secret = rand::thread_rng().gen_range(1..=100);
-    
-    io::stdin()
-        .read_line(&mut a)
-        .expect("failed to read line");
-    println!("You guessed: {}", a);
-    println!("Secret number: {secret} or {secret:b} in binary or {secret:x} in hex");
+    println!("Types of strings in Rust");
+    println!("-----------------------");
+    let name = "Kevin";
+    println!("{} is not mutable", name);
+    let mut name2 = "kev";
+    println!("{} is mutable", name2);
+    name2 = "Kev";
+    println!("kev was just changed to {}", name2);
 }
