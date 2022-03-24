@@ -7,4 +7,9 @@ fn main() {
     println!("{} is mutable", name2);
     name2 = "Kev";
     println!("kev was just changed to {}", name2);
+    let mut arr:[u32;5] = [1,2,3,4,5];
+    for i in 0..arr.len() {
+        arr[i] = arr[i] * 2;
+    } 
+    println!("{:?}", arr);
 }
