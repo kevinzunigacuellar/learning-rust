@@ -12,4 +12,8 @@ fn main() {
         arr[i] = arr[i] * 2;
     } 
     println!("{:?}", arr);
+
+    let example = "using cargo";
+
+    println!("{example}")
 }
