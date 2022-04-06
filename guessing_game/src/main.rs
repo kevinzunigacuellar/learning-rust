@@ -15,5 +15,24 @@ fn main() {
 
     let example = "using cargo";
 
-    println!("{example}")
+    println!("{example}");
+
+    let y = {
+        let x = 3;
+        x + 1
+    };
+
+    println!("The value of y is: {}", y);
+
+    let a = ["Kevin", "Mike", "Robbie", "Maika", "Holly"];
+
+    for element in a {
+        println!("the value is: {}", element);
+    }
+
+    let my_name = "Kevin";
+
+    for c in my_name.chars() {
+        println!("{c}");
+    }
 }
