@@ -35,4 +35,22 @@ fn main() {
     for c in my_name.chars() {
         println!("{c}");
     }
+
+    let ex1 = String::from("Hello World");
+    println!("{} is my first word",first_word(&ex1));
+    let first_w = &ex1[0..5];
+    println!("{} is my first word",first_w);
+
+
+}
+
+fn first_word(s: &String) -> usize {
+    let bytes = s.as_bytes();
+    println!("{:?}", bytes);
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+    s.len()
 }
